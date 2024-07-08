@@ -1,5 +1,5 @@
-import Sidebar from '@/components/admin-layout/Sidebar'
-import Header from '@/components/admin-layout/Header'
+import Sidebar from '../../components/admin-layout/Sidebar'
+import Header from '../../components/admin-layout/Header'
 
 export default function AdminLayout({
     children,
