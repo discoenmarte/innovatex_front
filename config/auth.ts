@@ -1,4 +1,4 @@
-import { authenticate } from '@/lib/services/axios/authenticate'
+import { authenticate } from '../lib/services/axios/authenticate'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { AuthOptions } from 'next-auth'
 

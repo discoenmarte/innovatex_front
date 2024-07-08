@@ -1,4 +1,4 @@
-import { TableColumn } from '@/types/table'
+import { TableColumn } from '../types/table'
 
 export const MENTOR_QUESTIONS_API_URL = '/mentor/questions'
 
