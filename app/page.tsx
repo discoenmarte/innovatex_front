@@ -1,12 +1,12 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { signIn } from 'next-auth/react'
-import { useSessionValidation } from '@/hooks/auth/useSessionValidation'
+import { useSessionValidation } from '../hooks/auth/useSessionValidation'
 import { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import { options } from '@/config/particles'
+import { options } from '../config/particles'
 import { LogIn } from 'lucide-react'
 
 export default function Home() {
