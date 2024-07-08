@@ -3,10 +3,10 @@
 import { Brain } from 'lucide-react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-import { SIDEBAR_LINKS } from '@/config/sidebar'
+import { SIDEBAR_LINKS } from '../../config/sidebar'
 import BuildTooltip from '../ui/tooltip/build'
 import { usePathname } from 'next/navigation'
-import { SideBarMenuItem } from '@/types/sidebar'
+import { SideBarMenuItem } from '../../types/sidebar'
 
 export default function Sidebar() {
     return (

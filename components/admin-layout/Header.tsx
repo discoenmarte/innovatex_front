@@ -11,7 +11,7 @@ import {
     DrawerTrigger,
 } from '../ui/drawer'
 import { signOut } from 'next-auth/react'
-import { useSessionValidation } from '@/hooks/auth/useSessionValidation'
+import { useSessionValidation } from '../../hooks/auth/useSessionValidation'
 
 export default function Header() {
     const _ = useSessionValidation()
