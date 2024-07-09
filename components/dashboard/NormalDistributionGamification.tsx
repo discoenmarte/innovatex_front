@@ -1,11 +1,11 @@
 'use client'
 
-import { DashboardFilters } from '@/types/dashboard'
+import { DashboardFilters } from '../../types/dashboard'
 import BuildCard from '../ui/card/build'
 import { useEffect, useState } from 'react'
-import { MentorQuestionsService } from '@/lib/services/mentor'
-import { ResponsePagination } from '@/lib/models/api-response'
-import { NormalDistribution, ResponseNormal } from '@/types/metrics'
+import { MentorQuestionsService } from '../../lib/services/mentor'
+import { ResponsePagination } from '../../lib/models/api-response'
+import { NormalDistribution, ResponseNormal } from '../../types/metrics'
 import EchartsGauss from '../charts/echarts/Gauss'
 import { CardSkeleton } from '../ui/skeletons'
 import NormalDistributionStat from './NormalDistributionStat'
@@ -30,7 +30,7 @@ export default function NormalDistributionGamification({
     /**
      * A function that retrieves normal distribution data for students.
      *
-     * @return {Promise<void>} - A promise that resolves when the data is fetched and processed.
+     * ../..return {Promise<void>} - A promise that resolves when the data is fetched and processed.
      */
     const getNormalDistStudentsData = async () => {
         try {

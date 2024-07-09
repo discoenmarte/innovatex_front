@@ -1,4 +1,4 @@
-import { MentorQuestions } from '@/lib/models/mentor/questions'
+import { MentorQuestions } from '../../lib/models/mentor/questions'
 import { BrainCircuit, CalendarPlus, UserRound } from 'lucide-react'
 import TimeBox from '../TimeBox'
 import { Separator } from '../ui/separator'

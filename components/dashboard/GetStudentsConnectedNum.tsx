@@ -1,11 +1,11 @@
 'use client'
 
-import BuildCard from '@/components/ui/card/build'
-import { MetricsService } from '@/lib/services/dashboard/metrics'
-import { StudentsDataConnections } from '@/types/metrics'
+import BuildCard from '../../components/ui/card/build'
+import { MetricsService } from '../../lib/services/dashboard/metrics'
+import { StudentsDataConnections } from '../../types/metrics'
 import { useEffect, useState } from 'react'
 import StudentsConnections from './StudentsConnections'
-import { DashboardFilters } from '@/types/dashboard'
+import { DashboardFilters } from '../../types/dashboard'
 
 export default function GetStudentsConnectedNum({
     filterValues,
@@ -33,7 +33,7 @@ export default function GetStudentsConnectedNum({
     /**
      * Retrieves metrics for best buddy and mentor students.
      *
-     * @return {Promise<void>} - A promise that resolves when the metrics are retrieved and set.
+     * ../..return {Promise<void>} - A promise that resolves when the metrics are retrieved and set.
      */
     const getMetrics = async () => {
         const params = filterValues

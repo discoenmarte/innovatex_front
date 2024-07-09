@@ -5,8 +5,8 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from '@/components/ui/table'
-import { NormatDistributionStat } from '@/types/metrics'
+} from '../../components/ui/table'
+import { NormatDistributionStat } from '../../types/metrics'
 
 export default function NormalDistributionStat({
     stat,

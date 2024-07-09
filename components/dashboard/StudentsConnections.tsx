@@ -1,10 +1,10 @@
 'use client'
 
-import EchartsBasicLineChart from '@/components/charts/echarts/BasicLineChart'
-import DownloadCsvButton from '@/components/ui/download-buttton'
-import { CardSkeleton } from '@/components/ui/skeletons'
-import { StudentConnection } from '@/lib/models/student-connection'
-import { StudentsData, StudentsDataConnections } from '@/types/metrics'
+import EchartsBasicLineChart from '../../components/charts/echarts/BasicLineChart'
+import DownloadCsvButton from '../../components/ui/download-buttton'
+import { CardSkeleton } from '../../components/ui/skeletons'
+import { StudentConnection } from '../../lib/models/student-connection'
+import { StudentsData, StudentsDataConnections } from '../../types/metrics'
 
 export default function StudentsConnections({
     studentsDataConnections,

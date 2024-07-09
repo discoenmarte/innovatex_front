@@ -1,5 +1,5 @@
-import { convertJsonToCsv } from '@/lib/actions/download'
-import { downloadCsv } from '@/lib/utils/download'
+import { convertJsonToCsv } from '../../lib/actions/download'
+import { downloadCsv } from '../../lib/utils/download'
 import React from 'react'
 import BuildTooltip from './tooltip/build'
 import { Button } from './button'

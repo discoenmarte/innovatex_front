@@ -1,4 +1,4 @@
-import { BestBuddyQuestions } from '@/lib/models/best-buddy/questions'
+import { BestBuddyQuestions } from '../../lib/models/best-buddy/questions'
 import { BrainCircuit, CalendarPlus, UserRound } from 'lucide-react'
 import moment from 'moment'
 import 'moment/locale/es'

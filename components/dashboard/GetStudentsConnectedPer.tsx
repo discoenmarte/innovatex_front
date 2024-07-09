@@ -1,11 +1,11 @@
 'use client'
 
-import BuildCard from '@/components/ui/card/build'
-import { MetricsService } from '@/lib/services/dashboard/metrics'
-import { StudentsDataConnections } from '@/types/metrics'
+import BuildCard from '../../components/ui/card/build'
+import { MetricsService } from '../../lib/services/dashboard/metrics'
+import { StudentsDataConnections } from '../../types/metrics'
 import { useEffect, useState } from 'react'
 import StudentsConnections from './StudentsConnections'
-import { DashboardFilters } from '@/types/dashboard'
+import { DashboardFilters } from '../../types/dashboard'
 import { useSession } from 'next-auth/react'
 
 export default function GetStudentsConnectedPer({
@@ -22,32 +22,13 @@ export default function GetStudentsConnectedPer({
     const [mentorStudents, setMentorStudents] = useState<any>()
     const { data: session } = useSession()
 
-    useEffect(() => {
-        getMetrics()
-    }, [])
-
-    useEffect(() => {
-        getMetrics()
-    }, [filterValues, mentorConnections])
 
     /**
      * Retrieves metrics for best buddy and mentor students.
      *
-     * @return {Promise<void>} - A promise that resolves when the metrics are retrieved and set.
+     * ../..return {Promise<void>} - A promise that resolves when the metrics are retrieved and set.
      */
-    const getMetrics = async () => {
-        const responseBestBuddy = await metricsService.getStudentPercentage(
-            bestBuddyConnections,
-            session?.user?.customer_account.licenses ?? 0
-        )
-        const responseMentor = await metricsService.getStudentPercentage(
-            mentorConnections,
-            session?.user?.customer_account.licenses ?? 0
-        )
-
-        setBestBuddyStudents(responseBestBuddy)
-        setMentorStudents(responseMentor)
-    }
+  
 
     return (
         <div className="grid gap-4 md:grid-cols-2">

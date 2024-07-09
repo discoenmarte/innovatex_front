@@ -1,7 +1,7 @@
-import { query } from '@/lib/actions'
+import { query } from '../../lib/actions'
 import { useEffect, useState } from 'react'
 import BuildCombobox from '../ui/combobox'
-import { InputCombox } from '@/types/dashboard'
+import { InputCombox } from '../../types/dashboard'
 
 export function ProgramCombox({ setProgram }: { setProgram: Function }) {
     const [open, setOpen] = useState(false)
@@ -19,7 +19,7 @@ export function ProgramCombox({ setProgram }: { setProgram: Function }) {
     /**
      * Retrieves the regions from the server and updates the state.
      * This regions are from Mentor and Best Buddy Metrics.
-     * @return {Promise<void>} - A promise that resolves when the regions are retrieved and the state is updated.
+     * ../..return {Promise<void>} - A promise that resolves when the regions are retrieved and the state is updated.
      */
     const getPrograms = async () => {
         try {

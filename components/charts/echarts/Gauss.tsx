@@ -10,7 +10,7 @@ import {
     TooltipComponent,
     TitleComponent,
 } from 'echarts/components'
-import { NormalDistribution } from '@/types/metrics'
+import { NormalDistribution } from '../../../types/metrics'
 
 echarts.use([
     TitleComponent,

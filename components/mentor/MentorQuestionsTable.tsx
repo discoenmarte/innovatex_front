@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react'
 import { BuildModelTable } from '../ui/table/build'
-import { MENTOR_QUETIONS_TABLE_COLUMNS } from '@/config/mentor'
+import { MENTOR_QUETIONS_TABLE_COLUMNS } from '../../config/mentor'
 import MentorQuestionsDetail from './MentorQuestionsDetail'
-import { MentorQuestionsService } from '@/lib/services/mentor'
-import { ResponsePagination } from '@/lib/models/api-response'
-import { DashboardFilters } from '@/types/dashboard'
+import { MentorQuestionsService } from '../../lib/services/mentor'
+import { ResponsePagination } from '../../lib/models/api-response'
+import { DashboardFilters } from '../../types/dashboard'
 
 export default function MentorQuestionsTable({
     filterValues,
@@ -35,7 +35,7 @@ export default function MentorQuestionsTable({
     /**
      * Retrieves mentor questions from the service and updates the response pagination state.
      *
-     * @return {Promise<void>} - A promise that resolves when the mentor questions are retrieved and the loading state is set to false.
+     * ../..return {Promise<void>} - A promise that resolves when the mentor questions are retrieved and the loading state is set to false.
      */
     const getMentorQuestions = async () => {
         try {

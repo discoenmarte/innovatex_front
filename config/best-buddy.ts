@@ -1,4 +1,4 @@
-import { TableColumn } from '@/types/table'
+import { TableColumn } from '../types/table'
 
 export const BEST_BUDDY_API_URL = '/best_buddy/questions'
 
