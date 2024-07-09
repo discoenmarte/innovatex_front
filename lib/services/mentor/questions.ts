@@ -1,11 +1,11 @@
-import { MENTOR_QUESTIONS_API_URL } from '@/config/mentor'
+import { MENTOR_QUESTIONS_API_URL } from '../../../config/mentor'
 import { APIService } from '..'
-import { create, query, update, destroy } from '@/lib/actions'
+import { create, query, update, destroy } from '../../../lib/actions'
 import {
     MentorQuestions,
     MentorQuestionsResults,
-} from '@/lib/models/mentor/questions'
-import { NormalDistribution, ResponseNormal } from '@/types/metrics'
+} from '../../../lib/models/mentor/questions'
+import { NormalDistribution, ResponseNormal } from '../../../types/metrics'
 
 export class MentorQuestionsService implements APIService {
     public getAPIUrl() {

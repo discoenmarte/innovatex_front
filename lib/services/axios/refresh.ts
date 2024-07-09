@@ -1,7 +1,7 @@
 import { getServerSession } from 'next-auth'
 import { api } from './auth'
 import { selectedEnvironment } from '.'
-import { authOptions } from '@/config/auth'
+import { authOptions } from '../../../config/auth'
 
 export interface TokensResponse {
     access: string

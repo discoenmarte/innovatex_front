@@ -1,4 +1,4 @@
-import { Account } from '@/lib/models/customer'
+import { Account } from '../../../lib/models/customer'
 import { selectedEnvironment } from '.'
 import { api } from './auth'
 

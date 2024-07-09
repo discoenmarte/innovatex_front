@@ -1,10 +1,10 @@
-import { BEST_BUDDY_API_URL } from '@/config/best-buddy'
+import { BEST_BUDDY_API_URL } from '../../../config/best-buddy'
 import { APIService } from '..'
-import { create, query, update, destroy } from '@/lib/actions'
+import { create, query, update, destroy } from '../../../lib/actions'
 import {
     BestBuddyQuestions,
     BestBuddyQuestionsResults,
-} from '@/lib/models/best-buddy/questions'
+} from '../../../lib/models/best-buddy/questions'
 
 export class BestBuddyQuestionsService implements APIService {
     public getAPIUrl() {

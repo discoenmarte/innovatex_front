@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from 'axios'
 import { getServerSession } from 'next-auth'
 import { refreshToken } from './refresh'
 import { selectedEnvironment } from '.'
-import { authOptions } from '@/config/auth'
+import { authOptions } from '../../../config/auth'
 
 const config = {
     withCredentials: true,

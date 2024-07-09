@@ -1,3 +1,3 @@
-import { environment } from '@/environment/dev'
+import { environment } from '../../../environment/dev'
 
 export const selectedEnvironment = environment

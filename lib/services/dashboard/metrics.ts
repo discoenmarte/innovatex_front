@@ -1,10 +1,10 @@
 import moment from 'moment'
 import { APIMetricsService } from '..'
-import { query } from '@/lib/actions'
-import { API_URL } from '@/config/metrics'
-import { StudentsDataConnections } from '@/types/metrics'
+import { query } from '../../../lib/actions'
+import { API_URL } from '../../../config/metrics'
+import { StudentsDataConnections } from '../../../types/metrics'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/config/auth'
+import { authOptions } from '../../../config/auth'
 
 export class MetricsService implements APIMetricsService {
     public async fetchItems(path: string, params?: any): Promise<any> {
